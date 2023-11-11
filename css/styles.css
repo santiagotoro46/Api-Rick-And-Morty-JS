@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Montserrat:ital@1&family=Roboto:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background: #1D4350;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A43931, #1D4350);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.header {
+    width: 100%;
+    height: 10rem;
+    background-image: url('../images/rick-and-morty-tv-shows-hd-4k-wallpaper-preview.jpg');
+    background-size: contain;
+
+}
+
+.title {
+    font-size: 5rem;
+    text-shadow: 0 0 15px rgb(255, 255, 0);
+    color: rgb(0, 255, 255);
+    font-family: 'Delicious Handrawn', cursive;
+    animation: title 1s infinite;
+}
+
+@keyframes title {
+    50% {
+        text-shadow: rgb(0, 255, 255);
+        color: rgb(255, 255, 0);
+    }
+}
+
+hr {
+    width: 90%;
+    margin: 1.5rem;
+}
+
+.principal-content {
+    margin-top: 1em;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.find-character {
+    width: 30rem;
+    height: 1rem;
+    font-size: 1.5rem;
+    border-radius: 21px;
+    background-color: rgb(95, 95, 95);
+    padding: 1.2em;
+    color: rgb(255, 255, 255);
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+.container-cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-character {
+    width: 22rem;
+    height: 10rem;
+    background-color: #18191adc;
+    border-radius: 0.5rem;
+    border: groove 2px rgb(255, 255, 255);
+    margin: 1rem;
+    display: flex;
+}
+
+.card-character>img {
+    width: 50%;
+    height: 100%;
+}
+
+.description-card {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-card>h2 {
+    text-align: center;
+    color: rgb(255, 255, 0);
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    margin-top: 0.9rem;
+}
+
+.description-card>p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(0, 255, 255);
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    margin-top: 0.5rem;
+}
+
+
+.navigationButtons {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.prevPage {
+    width: 150px;
+    height: 60px;
+    border: 3px solid #303033;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: rgb(163, 202, 165);
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Delicious Handrawn', sans-serif;
+    float: left;
+}
+
+
+
+.prevPage:hover {
+    background: #333849;
+    color: white;
+    font-size: 1.5em;
+}
+
+.nextPage {
+    width: 150px;
+    height: 60px;
+    border: 3px solid #303033;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: rgb(163, 202, 165);
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Delicious Handrawn', sans-serif;
+    float: right;
+}
+
+.nextPage:hover {
+    background: #333849;
+    color: white;
+    font-size: 1.5em;
+}
+
