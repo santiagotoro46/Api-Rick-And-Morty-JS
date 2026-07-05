@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Montserrat:ital@1&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -60,11 +61,11 @@ hr {
 
 .find-character {
     width: 30rem;
-    height: 1rem;
+    height: auto;
     font-size: 1.5rem;
     border-radius: 21px;
     background-color: rgb(95, 95, 95);
-    padding: 1.2em;
+    padding: 0.6em 1.2em;
     color: rgb(255, 255, 255);
     font-family: 'Delicious Handrawn', cursive;
 }
@@ -80,40 +81,57 @@ hr {
 
 .card-character {
     width: 22rem;
-    height: 10rem;
-    background-color: #18191adc;
-    border-radius: 0.5rem;
-    border: groove 2px rgb(255, 255, 255);
+    min-height: 11rem;
+    height: auto;
+    background-color: rgba(24, 25, 26, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
     margin: 1rem;
     display: flex;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-character:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 255, 255, 0.6);
+    box-shadow: 0 12px 30px rgba(0, 255, 255, 0.25);
 }
 
 .card-character>img {
-    width: 50%;
-    height: 100%;
+    width: 45%;
+    object-fit: cover;
+    align-self: stretch;
 }
 
 .description-card {
-    width: 50%;
-    height: 100%;
+    width: 55%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
 }
 
 .description-card>h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
     text-align: center;
     color: rgb(255, 255, 0);
-    text-shadow: 0 0 20px rgb(255, 255, 255);
-    margin-top: 0.9rem;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.4);
+    margin: 0 0 0.5rem 0;
+    word-break: break-word;
 }
 
 .description-card>p {
-    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
     text-align: center;
     color: rgb(0, 255, 255);
-    text-shadow: 0 0 20px rgb(255, 255, 255);
-    margin-top: 0.5rem;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+    margin: 0.25rem 0;
 }
 
 
